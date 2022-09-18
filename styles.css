@@ -1,0 +1,278 @@
+@font-face {
+    font-family: JosefinBold;
+    src: url(fonts/JosefinSans-Bold.ttf);
+}
+@font-face {
+    font-family: JosefinSemiBold;
+    src: url(fonts/JosefinSans-SemiBold.ttf);
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+    .menu-icon {
+      display: block !important;
+    }
+    .nav-link {
+        display: none !important;
+    }
+    h1 {
+        width: 66% !important;
+        font-size: 5rem !important;
+        line-height: 6rem !important;
+    }
+    form {
+        width: 80% !important;
+    }
+}
+/* On screens that are 993px or more*/
+@media screen and (min-width: 993px) {
+    #popup-menu {
+      display: none !important;
+    }
+    #behind-popup {
+        display: none !important;
+      }
+    #close-btn {
+        display: none !important;
+    }
+}
+.menu-icon, .close-icon {
+    display: none;
+}
+
+#popup-menu {
+    position: fixed;
+    background: rgb(255 155 4 / 68%);
+    backdrop-filter: blur(22px);
+    display: none;
+    height: 105vh;
+    width: 66vw;
+    z-index: 3;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+#behind-popup {
+    position: fixed;
+    display: none;
+    height: 105vh;
+    width: 100vh;
+    z-index: 1;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+body {
+    margin: 0px;
+}
+h1 {
+    font-family: JosefinBold;
+    color: white;
+    font-size: 4rem;
+    width: 40%;
+    line-height: 5rem
+}
+
+h2 {
+    font-family: JosefinBold;
+    color: #62605E;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+
+.hero-container {
+    background: linear-gradient(95.69deg, rgba(255, 155, 4, 0.88) 26.53%, rgba(0, 0, 0, 0) 56.87%), linear-gradient(0deg, rgba(235, 213, 158, 0.23), rgba(235, 213, 158, 0.23)), url(hero.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: right;
+    -webkit-box-shadow: 0px 12px 26px 6px rgba(105,105,105,0.3); 
+    box-shadow: 0px 12px 26px 6px rgba(105,105,105,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+nav {
+    margin-bottom: -80px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    opacity: 100%;
+    backdrop-filter: blur(18px);
+    border-bottom: solid 1px rgba(128, 128, 128, 0.623);
+    z-index: 99;
+}
+.inner-nav {
+    background-color: white;
+    width: inherit;
+    height: 100%;
+    opacity: 50%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.main-cta {
+    font-family: JosefinBold;
+    padding: 13px 32px 13px 32px;
+    background: rgba(255, 255, 255, 0.45);
+    color: #614111;
+    backdrop-filter: blur(48px);
+    border-radius: 32px;
+    max-width: max-content;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.inmenu {
+    background-color: rgb(255 155 4 / 72%) !important;
+    color: black !important;
+    border: solid 1px orange;
+
+}
+.inmenu:hover {
+    background-color: rgb(255 155 4 / 92%) !important;
+}
+.main-cta:hover {
+    font-family: JosefinBold;
+    padding: 13px 32px 13px 32px;
+    background: rgba(255, 255, 255, 0.45);
+    color: #614111;
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(255,255,255,0.67); 
+    box-shadow: 5px 5px 10px 5px rgba(255,255,255,0.67);
+    border-radius: 32px;
+    max-width: max-content;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.small-logo {
+    margin-right: auto;
+    margin-left: 5rem;
+}
+.nav-link {
+    text-decoration: none;
+    font-family: JosefinBold;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 1.5rem;
+}
+.nav-mobile-link {
+    text-decoration: none;
+    font-family: JosefinBold;
+    color: white;
+    font-size: 3.5rem;
+}
+.nav-link:hover {
+    text-decoration: none;
+    font-family: JosefinBold;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+}
+.last {
+    margin-right: 3rem;
+}
+
+.planning-container, .location-container, .hosting-container, .cagnotte-container, .story-container {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location-container, .cagnotte-container {
+    background-color: rgba(240, 240, 240, 0.88);
+}
+.content {
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.left60 {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+.left40 {
+    width: 40vw;
+}
+.event {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+}
+h3 {
+    font-family: JosefinBold;
+    color: #62605E;
+    font-size: 2rem;
+    margin-block: auto;
+    margin-bottom: 1rem;
+}
+p {
+    font-family: JosefinSemiBold;
+    color: #62605E;
+    font-size: 1.4rem;
+    margin-block: auto;
+    margin-bottom: 2rem;
+}
+
+.eventimg {
+    margin-bottom: 20px;
+}
+.bastide-img {
+    position: sticky;
+    top: 100px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eabd7063;
+    padding: 3rem;
+    font-family: JosefinBold;
+    font-size: 1.5rem;
+}
+
+.form-container {
+    padding: 4rem;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, textarea {
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(253, 63, 146, 0.71);
+    margin-top: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+form {
+    width: 41%;
+}
+label {
+    font-family: JosefinBold;
+    font-size: 1.5rem;
+    color: #000000b5;
+}
+::selection {
+    background-color: pink;
+    color: white;
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Confirmez votre venue.</title>
+    </head>
+    <body>
+        <nav>
+            <div class="inner-nav">
+                <a class="small-logo" href="index.html"><img src="smalllogo.png" width="59px" height="59px" /></a>
+                <a class="nav-link" href="index.html#planning">Programme</a>
+                <a class="nav-link" href="index.html#location">Accès</a>
+                <a class="nav-link" href="index.html#hosting">Hébergements</a>
+                <a class="nav-link" href="index.html#cagnotte">Cagnotte</a>
+                <a class="nav-link last" href="index.html#story">Histoire des chatons</a>
+                <a class="main-cta inmenu" href="confirm.html">Confirmer sa présence</a>
+                <img class="menu-icon" id="open-btn" onclick="showMenu()" src="menu.png" width="59px" height="59px" />
+                <img class="close-icon" id="close-btn" onclick="closeMenu()" src="close.png" width="59px" height="59px" />
+            </div>
+        </nav>
+        <div id="behind-popup"></div>
+        <div id="popup-menu">
+            <div class="mobile-menu">
+                <a class="nav-mobile-link" onclick="closeMenu()" href="index.html#planning">Programme</a>
+                <a class="nav-mobile-link" onclick="closeMenu()" href="index.html#location">Accès</a>
+                <a class="nav-mobile-link" onclick="closeMenu()" href="index.html#hosting">Hébergements</a>
+                <a class="nav-mobile-link" onclick="closeMenu()" href="index.html#cagnotte">Cagnotte</a>
+                <a class="nav-mobile-link" onclick="closeMenu()" href="index.html#story">Histoire des chatons</a>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h1 style="width: 70% !important; color: rgb(255 155 4 / 72%) !important; text-align: center;">Confirmez votre présence en remplissant le formulaire 👇</h1>
+            <form action="https://submit-form.com/0UGrF5Nw">
+                <label for="name">Nom et prénom du ou des invité.s</label>
+                <input type="text" id="name" name="name" placeholder="ex: Pierre Dupont & Louise Arbre" required="" />
+                <label for="name">Adresse postale</label>
+                <input type="text" id="addresse" name="addresse" placeholder="ex: 3 rue la Chambre, Paris, 75007" required="" />
+                <label for="message">Commentaire</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Êtes-vous végétarien ? Avez-vous des allergies ? Autres remarques"
+                ></textarea>
+                <button class="main-cta" type="submit" style="color: black;">Confirmer ma présence</button>
+              </form>
+        </div>
+        
+       <footer style="position: fixed; bottom: 0px; width: 100vw;">
+        Made with ❤️ by Charlotte & Virgin.
+    </footer>
+    <script src="scripts.js"></script>
+    </body>
+</html>
